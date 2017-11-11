@@ -50,6 +50,7 @@ struct   Utility {
         SVProgressHUD.dismiss()
     }
     static func showSuccessMessage(string:String){
+        SVProgressHUD.setBackgroundColor(.white)
         SVProgressHUD.setMaximumDismissTimeInterval(2.0)
         SVProgressHUD.showSuccess(withStatus: string)
     }

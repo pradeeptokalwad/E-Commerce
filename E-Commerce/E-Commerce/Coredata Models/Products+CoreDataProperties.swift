@@ -23,6 +23,11 @@ extension Products {
     @NSManaged public var productName: String?
     @NSManaged public var productTaxName: String?
     @NSManaged public var productTaxValue: Float
+    @NSManaged public var productImageURL: String?
+    @NSManaged public var ranking: String?
+    @NSManaged public var shareCount: Int64
+    @NSManaged public var viewdCount: Int64
+    @NSManaged public var orderedCount: Int64
     @NSManaged public var variants: NSSet?
 
 }

@@ -25,10 +25,13 @@ class CategoryListTableViewCell: UITableViewCell {
     }
     
     func configureCell(category: Categories) {
-        
         self.lblCategoryTitle.text = category.parentCatName
         self.lblProductCount.text = String(describing: category.productlist!.count)
-        
     }
+    func configureRankingCell(strTitle: NSString) {
+        self.lblCategoryTitle.text = strTitle as String
+        self.lblProductCount.text = ""
+    }
+
 
 }
